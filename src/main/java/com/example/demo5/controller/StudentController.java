@@ -2,7 +2,6 @@ package com.example.demo5.controller;
 
 import com.example.demo5.model.StudentModel;
 import com.example.demo5.service.StudentService;
-import jakarta.ws.rs.Path;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
@@ -22,7 +21,7 @@ public class StudentController {
 
     @GetMapping("/students")
     public String getStudentList(Model model) {
-        List<StudentModel> studentList = studentService.getStudentsList();
+        List<StudentModel> studentList = studentService.getStudentList();
         model.addAttribute("studentModel", studentList);
         return "persons/personList";
     }
