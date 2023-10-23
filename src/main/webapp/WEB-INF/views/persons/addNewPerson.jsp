@@ -84,7 +84,7 @@
 
             <!-- Begin Page Content -->
             <div class="container-fluid">
-
+                <form method="post" action='<c:url value="/addStudent"/>'>
                 <!-- Content Row -->
                 <div class="row">
                     <div class="col-xl-12 col-md-12 mb-12">
@@ -93,20 +93,20 @@
                                 <div class="form-group row">
                                     <label class="col-2 col-form-label">Imię</label>
                                     <div class="col-10">
-                                        <input class="form-control" type="text" placeholder="uzupełnij imię">
+                                        <input class="form-control" type="text" name="firstName" placeholder="uzupełnij imię">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-2 col-form-label">Nazwisko</label>
                                     <div class="col-10">
-                                        <input class="form-control" type="text" placeholder="uzupełnij nazwisko">
+                                        <input class="form-control" type="text" name="lastName" placeholder="uzupełnij nazwisko">
                                     </div>
                                 </div>
 
                                 <div class="form-group row">
                                     <label class="col-2 col-form-label">URL Git</label>
                                     <div class="col-10">
-                                        <input class="form-control" type="text" placeholder="uzupełnij url do gita">
+                                        <input class="form-control" type="text" name="gitHub" placeholder="uzupełnij url do gita">
                                     </div>
                                 </div>
 
@@ -115,7 +115,7 @@
                                     <label class="col-2 col-form-label">Od czego się zaczęło:</label>
                                     <div class="col-10">
                                 <textarea class="form-control" rows="5"
-                                          placeholder="napisz kilka słów co Cię zmotywowało aby zostać programistą..."></textarea>
+                                         name="start" placeholder="napisz kilka słów co Cię zmotywowało aby zostać programistą..."></textarea>
                                     </div>
                                 </div>
 
@@ -125,7 +125,7 @@
                     </div>
                 </div>
                 <input class="btn btn-success pull-left" type="submit" value="Wyślij" id="searchButton"></input>
-
+</form>
 
             </div>
             <!-- /.container-fluid -->
@@ -134,7 +134,7 @@
         <!-- End of Main Content -->
 
         <%@include file="../dynamic/board.jspf" %>
-        <%@include file="../dynamic/javascript.jspf"%>
+        <%@include file="../dynamic/javaScript.jspf"%>
 </body>
 
 </html>
