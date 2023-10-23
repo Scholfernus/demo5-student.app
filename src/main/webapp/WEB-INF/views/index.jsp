@@ -190,7 +190,7 @@
         <!-- End of Main Content -->
 
         <%@include file="dynamic/board.jspf"%>
-        <%@include file="dynamic/javascript.jspf"%>
+        <%@include file="dynamic/javaScript.jspf"%>
 
 </body>
 
