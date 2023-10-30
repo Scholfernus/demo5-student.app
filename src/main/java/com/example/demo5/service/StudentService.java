@@ -37,10 +37,10 @@ public class StudentService {
     public void deleteStudent(Long id) {
         studentRepository.deleteById(id);
     }
-    public List<StudentModel>sortByName(){
-        List<StudentModel> sortList = studentRepository.findSortedNamesOrderByLastNameAsc();
-        Stream<StudentModel> sortedList = sortList.stream().sorted();
-        log.info("last_name {}", sortedList);
-        return sortedList.toList();
-    }
+//    public List<StudentModel>sortByName(){
+//        List<StudentModel> sortList = studentRepository.findSortedNamesOrderByLastNameAsc();
+//        Stream<StudentModel> sortedList = sortList.stream().sorted();
+//        log.info("last_name {}", sortedList);
+//        return sortedList.toList();
+//    }
 }
