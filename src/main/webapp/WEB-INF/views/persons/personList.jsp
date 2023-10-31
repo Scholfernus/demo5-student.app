@@ -160,64 +160,54 @@
                                                 <!-- Project Card Example -->
                                                 <div class="card shadow mb-4">
                                                     <div class="card-header py-3">
-                                                        <h6 class="m-0 font-weight-bold
-              text-primary">Umiejętności</h6>
+                                                        <h6 class="m-0 font-weight-bold text-primary">Umiejętności</h6>
                                                     </div>
                                                     <div class="card-body">
-                                                        <h4 class="small
-              font-weight-bold">Java <span
+                                                        <h4 class="small font-weight-bold">Java <span
                                                                 class="float-right">50%</span></h4>
                                                         <div class="progress mb-4">
                                                             <div class="progress-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                                                         </div>
-                                                        <h4 class="small
-              font-weight-bold">Wzorce
+                                                        <h4 class="small font-weight-bold">Wzorce
                                                             projektowe
                                                             <span
                                                                     class="float-right">50%</span></h4>
                                                         <div class="progress mb-4">
                                                             <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
                                                         </div>
-                                                        <h4 class="small
-              font-weight-bold">TDD <span
+                                                        <h4 class="small font-weight-bold">TDD <span
                                                                 class="float-right">50%</span></h4>
                                                         <div class="progress mb-4">
                                                             <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                                                         </div>
-                                                        <h4 class="small
-              font-weight-bold">Bazy danych SQL
+                                                        <h4 class="small font-weight-bold">Bazy danych SQL
                                                             <span class="float-right">50%</span></h4>
                                                         <div class="progress mb-4">
                                                             <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                                                         </div>
 
-                                                        <h4 class="small
-              font-weight-bold">Hibernate JPA
+                                                        <h4 class="small font-weight-bold">Hibernate JPA
                                                             <span class="float-right">50%</span></h4>
                                                         <div class="progress">
                                                             <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                                                         </div><br>
 
-                                                        <h4 class="small
-              font-weight-bold">HTML, CSS
+                                                        <h4 class="small font-weight-bold">HTML, CSS
                                                             <span class="float-right">50%</span></h4>
                                                         <div class="progress mb-4">
                                                             <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                                                         </div>
-                                                        <h4 class="small
-              font-weight-bold">JSP
+                                                        <h4 class="small font-weight-bold">JSP
                                                             <span class="float-right">50%</span></h4>
                                                         <div class="progress mb-4">
                                                             <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                                                         </div>
-                                                        <h4 class="small
-              font-weight-bold">Thymeleaf
+                                                        <h4 class="small font-weight-bold">Thymeleaf
                                                             <span class="float-right">50%</span></h4>
                                                         <div class="progress mb-4">
                                                             <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                                                         </div>
-                                                        <h4 class="small
-              font-weight-bold">GIT
+                                                        <h4 class="small font-weight-bold">GIT
                                                             <span class="float-right">50%</span></h4>
                                                         <div class="progress mb-4">
                                                             <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
@@ -235,8 +225,7 @@
                                             <!-- Modal footer -->
                                             <div class="modal-footer">
                                                 <a href="#">
-                                                    <input type="submit" class="btn
-           btn-danger pull-left"
+                                                    <input type="submit" class="btn btn-danger pull-left"
                                                            value="Poprawiam"/></a>
                                             </div>
 
