@@ -1,8 +1,8 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <jsp:useBean id="now" class="java.util.Date"/>
-<%@ page contentType="text/html; charset=UTF-8" %>
-<%@include file="../dynamic/css.jspf" %>
+<%@ page contentType="text/html; charset=UTF-8"%>
+<%@include file="../dynamic/css.jspf"%>
 
 <body class="bg-gradient-primary">
 
@@ -42,7 +42,7 @@
 
                                 </form>
                                 <div class="text-center">
-                                    <a class="small" href="register.jsp">Utwórz konto!</a>
+                                    <a class="small" href="#">Utwórz konto!</a>
                                 </div>
                             </div>
                         </div>
@@ -56,7 +56,7 @@
 
 </div>
 
-<%@include file="../dynamic/javaScript.jspf" %>
+<%@include file="../dynamic/javaScript.jspf"%>
 
 </body>
 
