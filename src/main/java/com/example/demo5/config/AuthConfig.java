@@ -16,6 +16,7 @@ import java.util.Arrays;
 @Configuration
 @EnableWebSecurity
 public class AuthConfig {
+
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
@@ -34,6 +35,7 @@ public class AuthConfig {
         return new InMemoryUserDetailsManager(Arrays.asList(user, admin));
     }
 
+
     @Bean
     protected SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.authorizeHttpRequests()
@@ -44,15 +46,15 @@ public class AuthConfig {
                 .csrf().disable()
                 .headers().frameOptions().disable()
                 .and()
-                .formLogin()//teraz konfigurujemy formularz autoryzacji
+                .formLogin() // teraz będę konfigurował formularz autoryzacji
                 .loginPage("/login")
-                .usernameParameter("username") // nadajemy nazwę dla name w inpucie loginu formularza
-                .passwordParameter("password") // nadajemy nazwę dla name w inpucie hasła formularza
+                .usernameParameter("username") // nadajemy nazwę jaka będzie jako name w inpucie loginu formularza
+                .passwordParameter("password")// nadajemy nazwę jaka będzie jako name w inpucie hasła formularza
                 .loginProcessingUrl("/login")
                 .failureForwardUrl("/login?error") // co się stanie w momencie wpisania błędnych danych
-                .defaultSuccessUrl("/") // co się stanie w momencie prawidłowego uwierzytelnienia
+                .defaultSuccessUrl("/")// co się stanie w momencie prawidłowego uwierzytelnienia
                 .and()
-                .logout()  //mówimy springowi, że przechodzimy do obsługi logout
+                .logout() // mówimy springowi, że przechodzimy do obsłużenia logout
                 .logoutSuccessUrl("/login")
                 .logoutUrl("/logout");
         return http.build();
