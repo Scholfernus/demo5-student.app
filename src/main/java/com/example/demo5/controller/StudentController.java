@@ -51,7 +51,7 @@ public class StudentController {
     }
 
     @PostMapping("/del/{id}")
-    public RedirectView delStudentById(@PathVariable("id") Long id, StudentModel student) {
+    public RedirectView delStudentById(@PathVariable("id") Long id) {
         studentService.deleteStudent(id);
         return new RedirectView("/students");
     }
