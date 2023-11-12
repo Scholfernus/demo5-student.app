@@ -1,7 +1,9 @@
 package com.example.demo5.example;
 
-import java.util.Scanner;
+import org.springframework.stereotype.Component;
 
+import java.util.Scanner;
+@Component
 public class Rectangle implements Shape{
 
     @Override
