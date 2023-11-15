@@ -1,13 +1,12 @@
 package com.example.demo5.example;
 
-import org.springframework.boot.web.reactive.context.AnnotationConfigReactiveWebServerApplicationContext;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {
     public static void main(String[] args) {
-//        System.out.println("Hello world");
-        ApplicationContext context = new AnnotationConfigReactiveWebServerApplicationContext(AppConfig.class);
-        CalculateService areaService = (CalculateService) context.getBean("calculateService");
+        ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+        CalculateService areaService = context.getBean(CalculateService.class);
         areaService.calculate();
     }
 }
