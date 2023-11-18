@@ -7,6 +7,6 @@ import org.springframework.stereotype.Component;
 public class HelloConsoleCommand implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
-        System.out.print("Hello\n");
+        System.out.print("Hello ");
     }
 }
