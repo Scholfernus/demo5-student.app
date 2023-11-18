@@ -8,6 +8,6 @@ public class WorldConsoleCommand implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        System.out.print(" world!");
+        System.out.print("world!");
     }
 }
